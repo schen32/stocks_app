@@ -1,4 +1,5 @@
 "use client";
+import { CountrySelectField } from "@/components/forms/CountrySelectField";
 import InputField from "@/components/forms/InputField";
 import SelectField from "@/components/forms/SelectField";
 import { Button } from "@/components/ui/button";
@@ -60,6 +61,15 @@ const SignUp = () => {
             message: "Email address is required",
           }}
         ></InputField>
+
+        <CountrySelectField
+          name="country"
+          label="Country"
+          control={control}
+          error={errors.country}
+          required
+        ></CountrySelectField>
+
         <InputField
           name="password"
           label="Password"
