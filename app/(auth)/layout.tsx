@@ -22,23 +22,26 @@ const layout = ({ children }: { children: React.ReactNode }) => {
 
       <section className="auth-right-section">
         <div className="z-10 relative lg:mt-4 lg:mb-16">
-          <blockquote className="auth-blockquote">Test</blockquote>
+          <blockquote className="auth-blockquote">
+            Signalist turned my watchlist into a winning list. The alerts are
+            spot-on, and I feel more confident making moves in the market.
+          </blockquote>
           <div className="flex items-center justify-between">
             <div>
               <cite className="auth-testimontial-author">- Ethan R.</cite>
               <p className="max-md:text-xs text-gray-500">Retail Investor</p>
-              <div className="flex items-center gap-0.5">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Image
-                    src="/assets/icons/star.svg"
-                    alt="Star"
-                    key={star}
-                    width={20}
-                    height={20}
-                    className="w-5 h-5"
-                  ></Image>
-                ))}
-              </div>
+            </div>
+            <div className="flex items-center gap-0.5">
+              {[1, 2, 3, 4, 5].map((star) => (
+                <Image
+                  src="/assets/icons/star.svg"
+                  alt="Star"
+                  key={star}
+                  width={20}
+                  height={20}
+                  className="w-5 h-5"
+                ></Image>
+              ))}
             </div>
           </div>
         </div>
